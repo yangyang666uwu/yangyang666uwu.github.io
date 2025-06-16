@@ -9,20 +9,43 @@
     body {
       background-color: #ffffff;
       color: #333333;
-      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-family: "Space Mono", monospace;
       margin: 0;
       padding: 0;
+      display: flex;
+      flex-direction: row;
     }
 
-    header, section, footer {
+    .sidebar {
+      width: 200px;
+      background-color: #fff;
+      padding: 2em 1em;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-right: 1px solid #eee;
+    }
+
+    .sidebar img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1em;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .content {
+      margin-left: 220px;
+      padding: 2em;
       max-width: 750px;
-      margin: 2em auto;
-      padding: 0 1em;
     }
 
     header {
-      text-align: center;
-      margin-top: 3em;
       margin-bottom: 2em;
     }
 
@@ -65,44 +88,49 @@
       margin: 4em 0 2em;
     }
   </style>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <img src="https://f4.bcbits.com/img/0040043277_100.png" alt="Banner" style="width: 100%; max-height: 300px; object-fit: cover; display: block; margin-bottom: 1em;">
-    <h1>Adam Francis Targove</h1>
-    <p>Musician • Filmmaker • Creative Explorer</p>
-  </header>
+  <div class="sidebar">
+    <img src="https://f4.bcbits.com/img/0040062720_20.jpg" alt="Profile Picture">
+  </div>
 
-  <section id="about">
-    <h2>About</h2>
-    <p>I'm a multidisciplinary artist crafting sonic and visual experiences. My work blends emotional intuition with aesthetic design across sound and screen.</p>
-  </section>
+  <div class="content">
+    <header>
+      <img src="https://f4.bcbits.com/img/0040043277_100.png" alt="Banner" style="width: 100%; max-height: 300px; object-fit: cover; display: block; margin-bottom: 1em;">
+      <h1>Adam Francis Targove</h1>
+      <p>portfolio</p>
+    </header>
 
-  <section id="music">
-    <h2>Music</h2>
-    <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=0000000000/size=large/bgcol=ffffff/linkcol=666666/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://adamtargove.bandcamp.com">Listen on Bandcamp</a></iframe>
-    <p><a href="https://adamtargove.bandcamp.com" target="_blank">Visit my full Bandcamp »</a></p>
-  </section>
+    <section id="about">
+      <h2>About</h2>
+      <p>I'm a multidisciplinary artist crafting sonic and visual experiences. My work blends emotional intuition with aesthetic design across sound and screen.</p>
+    </section>
 
-  <section id="film">
-    <h2>Film</h2>
-    <p>Short film coming soon. Stay tuned for the premiere.</p>
-    <!-- You can replace this with an embedded YouTube or Vimeo player -->
-  </section>
+    <section id="music">
+      <h2>Music</h2>
+      <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=0000000000/size=large/bgcol=ffffff/linkcol=666666/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://adamtargove.bandcamp.com">Listen on Bandcamp</a></iframe>
+      <p><a href="https://adamtargove.bandcamp.com" target="_blank">Visit my full Bandcamp »</a></p>
+    </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Let's collaborate or connect.</p>
-    <ul>
-      <li><a href="mailto:adamtargove@gmail.com">Email me</a></li>
-      <li><a href="https://instagram.com/yourhandle" target="_blank">Instagram</a></li>
-      <li><a href="https://adamtargove.bandcamp.com" target="_blank">Bandcamp</a></li>
-    </ul>
-  </section>
+    <section id="film">
+      <h2>Film</h2>
+      <p>Short film coming soon. Stay tuned for the premiere.</p>
+    </section>
 
-  <footer>
-    <p>&copy; 2025 Adam Francis Targove</p>
-  </footer>
-  <img src="https://f4.bcbits.com/img/0040062720_20.jpg" alt="Profile Picture" style="position: fixed; top: 20px; left: 20px; width: 100px; height: 100px; border-radius: 50%; object-fit: cover; box-shadow: 0 4px 8px rgba(0,0,0,0.2); z-index: 1000;">
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Let's collaborate or connect.</p>
+      <ul>
+        <li><a href="mailto:adamtargove@gmail.com">Email me</a></li>
+        <li><a href="https://instagram.com/yourhandle" target="_blank">Instagram</a></li>
+        <li><a href="https://adamtargove.bandcamp.com" target="_blank">Bandcamp</a></li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Adam Francis Targove</p>
+    </footer>
+  </div>
 </body>
 </html>
