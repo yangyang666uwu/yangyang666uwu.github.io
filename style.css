@@ -47,6 +47,10 @@ img {
   font-size: 0.8em;
   color: #333;
   font-family: inherit;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 0.2em 0.5em;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
 }
 
 /* About page content wrapper */
