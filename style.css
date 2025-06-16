@@ -42,14 +42,16 @@ img {
 .copyright {
   position: fixed;
   bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
+  right: 10px;
+  /* remove centering */
+  left: auto;
+  transform: none;
   font-size: 0.8em;
   color: #333;
   font-family: inherit;
   background-color: rgba(255, 255, 255, 0.7);
   padding: 0.2em 0.5em;
-  border: none; 
+  border: none;
   border-radius: 4px;
 }
 
