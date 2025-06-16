@@ -10,7 +10,7 @@ body {
 
 .profile-picture {
   position: fixed;
-  top: 20px;
+  bottom: 20px;
   left: 20px;
   z-index: 1000;
 }
@@ -28,8 +28,7 @@ body {
   padding: 2em;
   max-width: 750px;
   text-align: center;
-  padding-top: 140px;
-  padding-bottom: 100px;
+  padding-bottom: 140px;
 }
 
 header {
@@ -72,12 +71,5 @@ footer {
   text-align: center;
   color: #777;
   font-size: 0.9em;
-  margin: 0;
-  padding: 2em 0;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: #fff;
-  border-top: 1px solid #eee;
+  margin: 4em 0 2em;
 }
