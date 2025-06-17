@@ -19,18 +19,28 @@ body {
 }
 
 /* Fixed "About" link styling */
-.about-link {
+.top-links {
   position: fixed;
   top: 10px;
   left: 10px;
-  color: #000;
-  text-decoration: none;
-  font-family: inherit;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
   z-index: 1000;
 }
-.about-link:hover {
+.about-link,
+.music-link {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #000;
+  text-decoration: none;
+  font-size: 1em;
+  transition: color 0.2s;
+}
+.about-link:hover,
+.music-link:hover {
   color: #888;
 }
+
 
 /* Profile image styling */
 img {
