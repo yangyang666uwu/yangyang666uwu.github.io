@@ -65,12 +65,12 @@ body {
   background: var(--color-hover-bg);
 }
 
-.nav-link.selected {
+.nav-link.selected,
+.nav-link.selected:hover {
   background: none;
   color: #888;
   cursor: default;
   pointer-events: none;
-  /* Remove any box-shadow or border if present */
   box-shadow: none;
   border: none;
 }
