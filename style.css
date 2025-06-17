@@ -66,10 +66,13 @@ body {
 }
 
 .nav-link.selected {
-  background: var(--color-selected-bg);
-  color: var(--color-selected-text);
+  background: none;
+  color: #888;
   cursor: default;
   pointer-events: none;
+  /* Remove any box-shadow or border if present */
+  box-shadow: none;
+  border: none;
 }
 
 /* Profile image styling */
