@@ -1,11 +1,34 @@
+:root {
+  /* Colors */
+  --color-primary: #1774e6;
+  --color-text: #333;
+  --color-text-light: #888;
+  --color-background: #fff;
+  --color-hover-bg: #eee;
+  --color-selected-bg: #e0e0e0;
+  --color-selected-text: #555;
+  
+  /* Typography */
+  --font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-size-base: 1em;
+  --font-size-small: 0.8em;
+  --font-size-large: 2em;
+  
+  /* Spacing */
+  --spacing-xs: 0.2em;
+  --spacing-sm: 0.5em;
+  --spacing-md: 1em;
+  --spacing-lg: 2em;
+}
+
 /* Global resets */
 html, body {
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
-  background-color: #fff;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: var(--color-background);
+  font-family: var(--font-family);
 }
 
 /* Center main content vertically and horizontally */
@@ -30,23 +53,21 @@ body {
 }
 
 .nav-link {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #000;
+  color: var(--color-text);
   text-decoration: none;
-  font-size: 1em;
+  font-size: var(--font-size-base);
   padding: 2px 10px;
-  border-radius: 5px;
   transition: color 0.2s, background 0.2s;
 }
 
 .nav-link:hover {
-  color: #1774e6;
-  background: #eee;
+  color: var(--color-primary);
+  background: var(--color-hover-bg);
 }
 
 .nav-link.selected {
-  background: #e0e0e0;
-  color: #555;
+  background: var(--color-selected-bg);
+  color: var(--color-selected-text);
   cursor: default;
   pointer-events: none;
 }
@@ -65,19 +86,18 @@ img {
   /* remove centering */
   left: auto;
   transform: none;
-  font-size: 0.8em;
-  color: #333;
+  font-size: var(--font-size-small);
+  color: var(--color-text);
   font-family: inherit;
   background-color: rgba(255, 255, 255, 0.7);
-  padding: 0.2em 0.5em;
+  padding: var(--spacing-xs) var(--spacing-sm);
   border: none;
-  border-radius: 4px;
 }
 
 /* About page content wrapper */
 .content {
   max-width: 750px;
-  padding: 2em;
+  padding: var(--spacing-lg);
   text-align: center;
 }
 
@@ -102,34 +122,34 @@ img {
 
 /* Music list link styling */
 .music-list a {
-  color: #111;
+  color: var(--color-text);
   text-decoration: none;
   transition: color 0.2s;
 }
 
 /* Music list link hover styling */
 .music-list a:hover {
-  color: #1774e6;
+  color: var(--color-primary);
   text-decoration: underline;
 }
 
 .music-meta {
   display: block;
   font-size: 0.9em;
-  color: #888;
-  margin-top: 0.25em;
+  color: var(--color-text-light);
+  margin-top: var(--spacing-xs);
 }
 
 /* Heading styling for About page */
 h1 {
-  margin: 0.5em 0;
-  font-size: 2em;
+  margin: var(--spacing-sm) 0;
+  font-size: var(--font-size-large);
   font-family: inherit;
 }
 
 /* Paragraph text */
 p {
-  margin: 0.5em 0;
-  color: #333;
+  margin: var(--spacing-sm) 0;
+  color: var(--color-text);
   font-family: inherit;
 }
