@@ -72,6 +72,47 @@ img {
   text-align: center;
 }
 
+/* Music page content wrapper */  
+.music-list-content {
+  max-width: 520px;
+  margin: 120px auto 0 auto;
+  padding: 0 16px;
+}
+
+/* Music list styling */
+.music-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Music list item styling */
+.music-list li {
+  margin-bottom: 2em;
+}
+
+/* Music list link styling */
+.music-list a {
+  color: #000;
+  text-decoration: none;
+  font-size: 1.25em;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+  transition: color 0.2s;
+}
+
+/* Music list link hover styling */
+.music-list a:hover {
+  color: #888;
+}
+
+.music-meta {
+  display: block;
+  font-size: 0.9em;
+  color: #888;
+  margin-top: 0.25em;
+}
+
 /* Heading styling for About page */
 h1 {
   margin: 0.5em 0;
