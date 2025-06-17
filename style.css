@@ -98,10 +98,13 @@ img {
 }
 
 /* About page content wrapper */
-.content {
-  max-width: 750px;
-  padding: var(--spacing-lg);
-  text-align: center;
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  /* Adjust this value if your sidebar is wider */
+  margin-left: 120px;
 }
 
 /* Music page content wrapper */  
