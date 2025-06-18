@@ -118,8 +118,9 @@ img {
 /* Music page content wrapper */  
 .music-list-content {
   max-width: 520px;
-  margin: 120px auto 0 auto;
+  margin: 120px 0 0 40px; /* top, right, bottom, left */
   padding: 0 16px;
+  text-align: left;
 }
 
 /* Music list styling */
