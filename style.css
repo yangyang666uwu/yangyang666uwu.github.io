@@ -60,6 +60,14 @@ body {
   transition: color 0.2s, background 0.2s;
 }
 
+.nav-link:focus,
+.nav-link:hover,
+.nav-link:active {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+
 .nav-link:hover {
   color: var(--color-primary);
   background: var(--color-hover-bg);
@@ -103,8 +111,8 @@ img {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  /* Adjust this value if your sidebar is wider */
-  margin-left: 120px;
+  /* Remove the left margin that was offsetting content */
+  margin-left: 0;
 }
 
 /* Music page content wrapper */  
@@ -123,7 +131,7 @@ img {
 /* Music list item styling */
 .music-list li {
   white-space: nowrap;
-  margin-bottom: 1.5em;
+  margin-bottom: 0.5em;
 }
 
 /* Music list link styling */
@@ -131,6 +139,9 @@ img {
   color: var(--color-text);
   text-decoration: none;
   transition: color 0.2s;
+  font-size: var(--font-size-small);
+  padding: 2px 10px;
+  font-family: var(--font-family);
 }
 
 /* Music list link hover styling */
