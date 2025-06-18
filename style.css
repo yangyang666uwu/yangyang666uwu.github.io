@@ -69,8 +69,8 @@ body {
 }
 
 .nav-link:hover {
-  color: var(--color-primary);
-  background: var(--color-hover-bg);
+  color: #888;
+  background: none;
 }
 
 .nav-link.selected,
