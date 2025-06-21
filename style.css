@@ -171,3 +171,65 @@ p {
   color: var(--color-text);
   font-family: inherit;
 }
+
+/* Mobile responsive styles for music page */
+@media (max-width: 768px) {
+  .music-list-content {
+    max-width: 100%;
+    margin: 100px 16px 0 16px; /* top, right, bottom, left */
+    padding: 0;
+  }
+  
+  .music-list li {
+    white-space: nowrap; /* Keep text on one line */
+    margin-bottom: 0.8em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .music-list a {
+    font-size: clamp(0.6rem, 3vw, 0.9rem); /* Responsive font size that scales with viewport */
+    line-height: 1.2;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .top-links {
+    top: 8px;
+    left: 8px;
+  }
+  
+  .nav-link {
+    font-size: 0.9em;
+    padding: 1px 8px;
+  }
+  
+  .copyright {
+    bottom: 8px;
+    right: 8px;
+    font-size: 0.7em;
+    padding: 4px 8px;
+  }
+}
+
+/* Extra small mobile devices */
+@media (max-width: 480px) {
+  .music-list-content {
+    margin: 80px 12px 0 12px;
+  }
+  
+  .music-list a {
+    font-size: clamp(0.5rem, 2.5vw, 0.8rem); /* Even smaller responsive font size */
+  }
+  
+  .top-links {
+    top: 6px;
+    left: 6px;
+  }
+  
+  .nav-link {
+    font-size: 0.85em;
+    padding: 1px 6px;
+  }
+}
